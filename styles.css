@@ -1,0 +1,165 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 60px; /* Inicialmente fechada */
+    background: linear-gradient(135deg, #42a5f5, #1e88e5);
+    color: white;
+    padding: 20px 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease; /* Animação suave para largura e outros elementos */
+    overflow-x: hidden; /* Impede conteúdo de estourar */
+    position: relative;
+  }
+  
+  .sidebar:hover {
+    width: 250px; /* Largura expandida ao passar o mouse */
+  }
+  
+  .sidebar h2 {
+    display: none; /* Esconde o título inicialmente */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar:hover h2 {
+    display: block;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .sidebar:hover ul li a {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .sidebar ul li a:hover {
+    background: #1565c0;
+  }
+  
+  /* Conteúdo Principal */
+  .content {
+    flex: 1;
+    padding: 20px;
+    background: #e3f2fd;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    color: #1e88e5;
+  }
+/* Eventos Criados */
+#event-list li {
+    list-style: none;
+    background: #bbdefb; /* Azul claro */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombreamento suave */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #event-list li span {
+    font-weight: bold;
+    color: #1e88e5; /* Azul mais forte para o texto */
+  }
+  
+  #event-list li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #event-list li .edit-btn {
+    background: #4caf50;
+    color: white;
+  }
+  
+  #event-list li .edit-btn:hover {
+    background: #388e3c;
+  }
+  
+  #event-list li .delete-btn {
+    background: #f44336;
+    color: white;
+  }
+  
+  #event-list li .delete-btn:hover {
+    background: #d32f2f;
+  }
+    
+  #create-event-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  #create-event-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  #create-event-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #create-event-form button {
+    background-color: #1e88e5;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #create-event-form button:hover {
+    background-color: #1e88e5;
+  }
+  

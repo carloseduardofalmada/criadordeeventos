@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Evento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Página Principal</a></li>
+      <li><a href="edit.html">Editar Eventos</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <header>
+      <h1>🎉 Criar Novo Evento 🎉</h1>
+    </header>
+
+    <form id="create-event-form">
+      <label for="event-name">Nome do Evento:</label>
+      <input type="text" id="event-name" required>
+      
+      <label for="event-date">Data:</label>
+      <input type="date" id="event-date" required>
+      
+      <label for="event-location">Local:</label>
+      <input type="text" id="event-location" required>
+      
+      <label for="event-target">Público-alvo:</label>
+      <input type="text" id="event-target" required>
+      
+      <button type="submit">Criar Evento</button>
+    </form>
+    
+
+  <script src="script.js"></script>
+</body>
+</html>
